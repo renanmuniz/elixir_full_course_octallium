@@ -1,0 +1,45 @@
+ANOTACOES
+
+Criar arquivo de script em elixir(.exs):
+ex.: hello.exs
+
+	defmodule Hello do
+	  def world() do
+	    IO.puts("Hello Elixir")
+	  end
+	end
+
+	Hello.world()
+
+
+Para executar, ir no diretorio e executar elixir hello.exs
+Para compilar: elixirc hello.exs 
+Compilar irá gerar um arquivo .beam, que é o "bytecode" da VM do Erlang.
+
+
+Compilar o arquivo exs pelo iex
+iex(1)> c "hello.exs"
+
+Executar
+iex(2)> Hello.world
+Hello Elixir
+:ok
+
+Pode passar o parametro assim também:
+iex(5)> Hello.world "Elixir!"
+Hello Elixir!
+:ok
+
+
+
+
+Data types:
+ATOM
+Atoms in Elixir are constants whose names are their own values. They are similar to features such as enums and symbols in other programming languages.
+
+:some_name
+:"some name"
+
+
+
+
